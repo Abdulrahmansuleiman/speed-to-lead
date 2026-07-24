@@ -42,6 +42,9 @@ export default function Home() {
       if (!res.ok) throw new Error("Submission failed");
 
       setStatus("success");
+      setTimeout(() => {
+        window.location.href = "/resources";
+      }, 1500);
       setName("");
       setEmail("");
     } catch {
