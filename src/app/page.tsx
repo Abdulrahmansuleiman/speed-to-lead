@@ -87,7 +87,7 @@ export default function Home() {
             <>
               {/* ── Eyebrow Badge ── */}
               <div className="flex justify-center mb-8">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#2A2A2A] bg-[#141414]">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#2A2A2A] bg-[#141414]">
                   <span className="w-2 h-2 rounded-full bg-[#2E7BFF] shrink-0"></span>
                   <span className="text-[11px] font-semibold tracking-widest text-gray-400 uppercase">
                     Free Resource — Speed-to-Lead System
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
 
               {/* ── Form Card ── */}
-              <div className="rounded-2xl border border-[#2A2A2A] bg-[#111111] p-7 sm:p-8 mt-10">
+              <div className="mx-auto mt-10 max-w-[480px] rounded-2xl border border-[#2A2A2A] bg-[#111111] p-7 sm:p-8">
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
                     <label htmlFor="name" className="block text-xs font-medium text-gray-500 mb-1.5 uppercase tracking-wide">
@@ -137,7 +137,7 @@ export default function Home() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="Enter your full name"
-                      className="w-full h-[48px] px-4 rounded-lg bg-[#1A1A1A] border border-[#2A2A2A] text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#2E7BFF] focus:ring-1 focus:ring-[#2E7BFF]/40 transition-all"
+                      className="w-full h-[46px] px-4 rounded-lg bg-[#1A1A1A] border border-[#2A2A2A] text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#2E7BFF] focus:ring-1 focus:ring-[#2E7BFF]/40 transition-all"
                     />
                   </div>
                   <div>
@@ -151,7 +151,7 @@ export default function Home() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email address"
-                      className="w-full h-[48px] px-4 rounded-lg bg-[#1A1A1A] border border-[#2A2A2A] text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#2E7BFF] focus:ring-1 focus:ring-[#2E7BFF]/40 transition-all"
+                      className="w-full h-[46px] px-4 rounded-lg bg-[#1A1A1A] border border-[#2A2A2A] text-white placeholder-gray-600 text-sm focus:outline-none focus:border-[#2E7BFF] focus:ring-1 focus:ring-[#2E7BFF]/40 transition-all"
                     />
                   </div>
 
@@ -162,7 +162,7 @@ export default function Home() {
                   <button
                     type="submit"
                     disabled={status === "loading"}
-                    className="w-full h-[48px] rounded-lg bg-[#2E7BFF] hover:bg-[#1a5fcc] active:scale-[0.98] text-white font-bold text-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_20px_rgba(46,123,255,0.3)] hover:shadow-[0_0_30px_rgba(46,123,255,0.5)]"
+                    className="w-full h-[46px] rounded-lg bg-[#2E7BFF] hover:bg-[#1a5fcc] active:scale-[0.98] text-white font-bold text-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_20px_rgba(46,123,255,0.3)] hover:shadow-[0_0_30px_rgba(46,123,255,0.5)]"
                   >
                     {status === "loading" ? (
                       <span className="flex items-center justify-center gap-2">
@@ -178,7 +178,20 @@ export default function Home() {
                   </button>
                 </form>
 
-                <p className="text-center text-[11px] text-gray-600 mt-5">
+                <div className="flex items-start gap-2 mt-4">
+                  <input
+                    type="checkbox"
+                    id="agree"
+                    defaultChecked
+                    className="mt-0.5 h-3.5 w-3.5 rounded border-gray-600 bg-[#1A1A1A] text-[#2E7BFF] focus:ring-[#2E7BFF]/40 focus:ring-offset-0 cursor-pointer shrink-0"
+                  />
+                  <label htmlFor="agree" className="text-[11px] text-gray-600 leading-relaxed cursor-pointer">
+                    I agree to receive updates about Speed-to-Lead tips and AI automation. Unsubscribe anytime.{" "}
+                    <a href="#" className="underline text-gray-500 hover:text-[#2E7BFF] transition-colors">Privacy policy</a>.
+                  </label>
+                </div>
+
+                <p className="text-center text-[11px] text-gray-600 mt-4">
                   No spam. Unsubscribe anytime. Your info is safe with me.
                 </p>
               </div>
