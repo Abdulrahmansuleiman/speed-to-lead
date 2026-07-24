@@ -49,11 +49,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0A0A0A] flex flex-col">
       {/* ── Top Nav ── */}
-      <nav className="w-full px-6 py-4 flex items-center justify-between max-w-[720px] mx-auto">
-        <div className="text-sm font-bold text-[#2E7BFF] tracking-wide">
+      <nav className="w-full px-6 pt-6 pb-4 flex items-center justify-between max-w-[720px] mx-auto">
+        <div className="text-[13px] font-medium text-white tracking-wide">
           Abdulrahman Suleiman | AI
         </div>
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-4">
           <a href="#" className="text-gray-500 hover:text-[#2E7BFF] transition-colors" aria-label="LinkedIn">
             <svg className="w-[18px] h-[18px]" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
           </a>
@@ -96,7 +96,7 @@ export default function Home() {
               </div>
 
               {/* ── Headline ── */}
-              <div className="text-center mb-8">
+              <div className="text-center mb-10">
                 <h1 className="text-4xl sm:text-5xl font-extrabold leading-[1.1] tracking-tight mb-0">
                   <span className="text-white block">Stop Losing Leads.</span>
                   <span className="text-[#2E7BFF] glow-text block mt-1">Start Closing Them.</span>
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
 
               {/* ── Explainer ── */}
-              <div className="text-center mb-10 px-2">
+              <div className="text-center mb-8 px-2">
                 <p className="text-gray-400 text-[15px] leading-relaxed max-w-[560px] mx-auto">
                   <span className="font-semibold text-gray-200">What&apos;s Speed-to-Lead?</span>{" "}
                   The first business to respond to a lead wins the sale most of the time. This system replies in under 60 seconds, every time, so you stop losing deals to slower competitors.
@@ -124,8 +124,8 @@ export default function Home() {
               </div>
 
               {/* ── Form Card ── */}
-              <div className="rounded-2xl border border-[#2A2A2A] bg-[#111111] p-7 sm:p-8">
-                <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="rounded-2xl border border-[#2A2A2A] bg-[#111111] p-7 sm:p-8 mt-10">
+                <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
                     <label htmlFor="name" className="block text-xs font-medium text-gray-500 mb-1.5 uppercase tracking-wide">
                       Full Name
@@ -178,13 +178,13 @@ export default function Home() {
                   </button>
                 </form>
 
-                <p className="text-center text-[11px] text-gray-600 mt-4">
+                <p className="text-center text-[11px] text-gray-600 mt-5">
                   No spam. Unsubscribe anytime. Your info is safe with me.
                 </p>
               </div>
 
               {/* ── Social Proof ── */}
-              <div className="flex items-center justify-center gap-3 mt-8">
+              <div className="flex items-center justify-center gap-3 mt-6">
                 <div className="flex -space-x-2">
                   {["A", "B", "C", "D"].map((letter, i) => (
                     <div
@@ -201,7 +201,7 @@ export default function Home() {
               </div>
 
               {/* ── Stats Bar ── */}
-              <div className="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-[#1A1A1A]">
+              <div className="grid grid-cols-3 gap-6 mt-14 pt-10 pb-4 border-t border-[#1A1A1A]">
                 {STATS.map((stat) => (
                   <div key={stat.label} className="text-center">
                     <div className="text-2xl sm:text-3xl font-extrabold text-[#2E7BFF] mb-1">{stat.value}</div>
