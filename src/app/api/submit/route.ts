@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
 
     if (!scriptUrl) {
       console.error("GOOGLE_APPS_SCRIPT_URL is not set");
-      return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
+      return NextResponse.json({ error: "Form not configured yet. Please set up Google Sheets integration." }, { status: 500 });
     }
 
     const response = await fetch(scriptUrl, {
@@ -37,6 +37,6 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Submission error:", error);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    return NextResponse.json({ error: "Failed to submit. Please check your connection and try again." }, { status: 500 });
   }
 }
