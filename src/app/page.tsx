@@ -73,7 +73,8 @@ export default function Home() {
         </nav>
 
         {/* ── Main Content ── */}
-        <main className="flex-1 flex flex-col items-center pt-10">
+        <main className="flex-1 flex items-center justify-center px-5 py-10">
+          <div className="w-full max-w-[700px]">
           {status === "success" ? (
             /* ── Success State ── */
             <div className="text-center py-16">
@@ -219,6 +220,7 @@ export default function Home() {
               </div>
             </>
           )}
+          </div>
         </main>
 
         {/* ── 9. Footer ── */}
