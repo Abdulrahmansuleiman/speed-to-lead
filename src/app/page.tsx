@@ -74,7 +74,7 @@ export default function Home() {
 
         {/* ── Main Content ── */}
         <main className="flex-1 flex items-center justify-center px-5 py-10">
-          <div className="w-full max-w-[700px]">
+          <div className="max-w-[700px] mx-auto">
           {status === "success" ? (
             /* ── Success State ── */
             <div className="text-center py-16">
