@@ -51,7 +51,7 @@ export default function ResourcesPage() {
       {/* Header */}
       <header>
         <a href="/" className="logo">ABDULRAHMAN SULEIMAN<span className="divider">|</span>AI</a>
-        <a href="/" className="header-cta">Get Access</a>
+        <a href="/" className="header-cta">Book A Call</a>
       </header>
 
       {/* Hero */}
@@ -93,7 +93,7 @@ export default function ResourcesPage() {
             <h3>Ready to stop losing leads?</h3>
             <p>Watch the full Speed-to-Lead training and set up your system today.</p>
           </div>
-          <a href="/" className="cta-btn">Get Free Access</a>
+          <a href="/" className="cta-btn">Book A Call</a>
         </div>
       </div>
 
