@@ -47,7 +47,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0A0A0A] flex flex-col">
+    <div className="min-h-screen bg-[#0A0A0A] flex flex-col overflow-x-hidden w-full">
       {/* ── 0. Page Container ── */}
       <div className="w-full max-w-[1000px] mx-auto px-6 flex flex-col flex-1">
 
