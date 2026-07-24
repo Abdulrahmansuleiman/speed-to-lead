@@ -3,9 +3,11 @@
 
 @theme {
   --font-inter: 'Inter', sans-serif;
-  --color-brand: #1a56db;
-  --color-brand-dark: #1244b0;
-  --color-brand-light: #e8eefb;
+  --color-brand: #2E7BFF;
+  --color-brand-dark: #1a5fcc;
+  --color-bg: #0A0A0A;
+  --color-surface: #1A1A1A;
+  --color-border: #2A2A2A;
 }
 
 * {
@@ -20,8 +22,17 @@ html {
 
 body {
   font-family: var(--font-inter);
-  background: #ffffff;
-  color: #1a1a2e;
+  background: var(--color-bg);
+  color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { text-shadow: 0 0 20px rgba(46, 123, 255, 0.5), 0 0 40px rgba(46, 123, 255, 0.2); }
+  50% { text-shadow: 0 0 30px rgba(46, 123, 255, 0.7), 0 0 60px rgba(46, 123, 255, 0.3); }
+}
+
+.glow-text {
+  animation: glow-pulse 3s ease-in-out infinite;
 }
