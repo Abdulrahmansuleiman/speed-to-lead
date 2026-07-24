@@ -1,0 +1,42 @@
+import { NextRequest, NextResponse } from "next/server";
+
+export async function POST(req: NextRequest) {
+  try {
+    const { name, email } = await req.json();
+
+    if (!name || !email) {
+      return NextResponse.json({ error: "Name and email are required" }, { status: 400 });
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json({ error: "Invalid email address" }, { status: 400 });
+    }
+
+    const scriptUrl = process.env.GOOGLE_APPS_SCRIPT_URL;
+
+    if (!scriptUrl) {
+      console.error("GOOGLE_APPS_SCRIPT_URL is not set");
+      return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
+    }
+
+    const response = await fetch(scriptUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: name.trim(),
+        email: email.trim().toLowerCase(),
+        timestamp: new Date().toISOString(),
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to submit to Google Sheets");
+    }
+
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error("Submission error:", error);
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
+}
