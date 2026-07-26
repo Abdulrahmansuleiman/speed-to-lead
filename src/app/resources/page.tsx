@@ -1,29 +1,28 @@
 "use client";
 
-const RESOURCE_CARDS = [
+const SECTIONS = [
   {
-    num: "01",
-    title: "Speed-to-Lead System",
-    description: "The complete breakdown of how I set up a system that responds to leads in under 60 seconds — and closes deals before competitors even see them.",
-    label: "Watch This First",
-    type: "video",
-    href: "#",
-  },
-  {
-    num: "02",
-    title: "How to Install Claude Code",
-    description: "Step-by-step guide to getting Claude Code running on your machine. No fluff, no confusion — just the exact setup that works.",
-    label: "Watch This Next",
-    type: "video",
-    href: "#",
-  },
-  {
-    num: "03",
-    title: "How to Build Custom Dashboards Using Claude Code",
-    description: "The exact process I use to build client-ready dashboards with Claude Code. From prompt to production in one session.",
-    label: "Watch This Next",
-    type: "video",
-    href: "#",
+    label: "Start Here",
+    cards: [
+      {
+        num: "01",
+        title: "Speed-to-Lead System",
+        hook: "The exact system that responds to leads in under 60 seconds and closes deals before competitors even see them.",
+        href: "#",
+      },
+      {
+        num: "02",
+        title: "How to Install Claude Code",
+        hook: "5 minutes to install. The foundation for building everything else.",
+        href: "#",
+      },
+      {
+        num: "03",
+        title: "How to Build Custom Dashboards Using Claude Code",
+        hook: "One screen shows your entire business. Revenue, leads, pipeline — built with Claude Code.",
+        href: "#",
+      },
+    ],
   },
 ];
 
@@ -43,27 +42,26 @@ export default function ResourcesPage() {
         <p className="fade-in-1">Everything you need to automate your lead response, install Claude Code, and start building custom dashboards — all free.</p>
       </div>
 
-      {/* Resource Cards */}
-      <div className="grid-wrap">
-        <div className="cards">
-          {RESOURCE_CARDS.map((card) => (
-            <a key={card.num} href={card.href} className="card fade-in-2">
-              <div className="card-label">{card.label}</div>
-              <div className="vsl-thumb">
-                <div className="vsl-play">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-              </div>
-              <div className="card-num">{card.num}</div>
-              <div className="card-title">{card.title}</div>
-              <div className="card-hook">{card.description}</div>
-              <span className="arrow">
-                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
-              </span>
-            </a>
-          ))}
+      {/* Sections */}
+      {SECTIONS.map((section) => (
+        <div key={section.label}>
+          <div className="section-header fade-in-2"><span className="section-label">{section.label}</span></div>
+          <div className="grid-wrap">
+            <div className="cards">
+              {section.cards.map((card) => (
+                <a key={card.num} href={card.href} className="card fade-in-2">
+                  <div className="card-num">{card.num}</div>
+                  <div className="card-title">{card.title}</div>
+                  <div className="card-hook">{card.hook}</div>
+                  <span className="arrow">
+                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+      ))}
 
       {/* CTA */}
       <div className="cta-wrap">

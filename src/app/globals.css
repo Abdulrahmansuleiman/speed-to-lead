@@ -512,14 +512,6 @@ h1 .gradient {
   line-height: 1.5;
   letter-spacing: -0.1px;
 }
-.card-label {
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: #ff4444;
-  margin-bottom: 14px;
-}
 .card .new-badge {
   position: absolute;
   top: 16px;
@@ -543,62 +535,6 @@ h1 .gradient {
 .card:hover .arrow {
   color: rgba(46, 123, 255, 0.5);
   transform: translateX(4px);
-}
-
-/* VSL Thumbnail */
-.vsl-thumb {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1117 100%);
-  border: 1px solid rgba(255,255,255,0.06);
-  margin-bottom: 20px;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.vsl-thumb::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(46, 123, 255, 0.08) 0%, transparent 70%);
-}
-.vsl-play {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: rgba(46, 123, 255, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s;
-  box-shadow: 0 0 30px rgba(46, 123, 255, 0.3);
-}
-.vsl-play svg {
-  width: 22px;
-  height: 22px;
-  color: #fff;
-  margin-left: 2px;
-}
-.card:hover .vsl-play {
-  transform: scale(1.1);
-  box-shadow: 0 0 40px rgba(46, 123, 255, 0.5);
-}
-.vsl-duration {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-  font-size: 11px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.7);
-  background: rgba(0,0,0,0.6);
-  padding: 2px 6px;
-  border-radius: 4px;
-  z-index: 1;
 }
 
 /* CTA */
