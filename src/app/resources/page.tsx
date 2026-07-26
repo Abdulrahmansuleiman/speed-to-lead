@@ -10,11 +10,6 @@ const SECTIONS = [
         hook: "The exact system that responds to leads in under 60 seconds and closes deals before competitors even see them.",
         href: "#",
       },
-    ],
-  },
-  {
-    label: "Bonus",
-    cards: [
       {
         num: "02",
         title: "How to Install Claude Code",
@@ -25,6 +20,29 @@ const SECTIONS = [
         num: "03",
         title: "How to Build Custom Dashboards Using Claude Code",
         hook: "One screen shows your entire business. Revenue, leads, pipeline — built with Claude Code.",
+        href: "#",
+      },
+    ],
+  },
+  {
+    label: "Bonus",
+    cards: [
+      {
+        num: "04",
+        title: "Morning Prep Routine",
+        hook: "Start every day knowing exactly what to do. A 5-minute routine that sets up your entire day.",
+        href: "#",
+      },
+      {
+        num: "05",
+        title: "DM Scripts That Book Calls",
+        hook: "Word-for-word openers, qualifying questions, and follow-up cadences that turn replies into booked calls.",
+        href: "#",
+      },
+      {
+        num: "06",
+        title: "Lead Follow-Up Automation",
+        hook: "Stop losing leads at 2am. This system follows up instantly, qualifies automatically, and books the call for you.",
         href: "#",
       },
     ],
