@@ -10,6 +10,11 @@ const SECTIONS = [
         hook: "The exact system that responds to leads in under 60 seconds and closes deals before competitors even see them.",
         href: "#",
       },
+    ],
+  },
+  {
+    label: "Bonus",
+    cards: [
       {
         num: "02",
         title: "How to Install Claude Code",
@@ -38,8 +43,8 @@ export default function ResourcesPage() {
       {/* Hero */}
       <div className="hero">
         <div className="glow-1"></div>
-        <h1 className="fade-in">Free <span className="gr">Resources</span></h1>
-        <p className="fade-in-1">Everything you need to automate your lead response, install Claude Code, and start building custom dashboards — all free.</p>
+        <h1 className="fade-in">The <span className="gr">Speed-to-Lead</span> System</h1>
+        <p className="fade-in-1">You&apos;re in. Here&apos;s the system that replies to leads in under 60 seconds — plus some bonuses to help you build even more with Claude Code.</p>
       </div>
 
       {/* Sections */}
