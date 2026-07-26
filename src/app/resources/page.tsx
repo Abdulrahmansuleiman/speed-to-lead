@@ -28,9 +28,9 @@ const SECTIONS = [
     label: "Bonus",
     cards: [
       {
-        num: "04",
-        title: "Morning Prep Routine",
-        hook: "Start every day knowing exactly what to do. A 5-minute routine that sets up your entire day.",
+        num: "07",
+        title: "Build Skills - Meeting Prep, Morning Routine",
+        hook: "Type /meeting-prep, Jarvis briefs you in 30 seconds.",
         href: "#",
       },
       {
