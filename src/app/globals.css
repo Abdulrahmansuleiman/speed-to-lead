@@ -512,6 +512,14 @@ h1 .gradient {
   line-height: 1.5;
   letter-spacing: -0.1px;
 }
+.card-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #ff4444;
+  margin-bottom: 14px;
+}
 .card .new-badge {
   position: absolute;
   top: 16px;
