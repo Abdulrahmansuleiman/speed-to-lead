@@ -5,21 +5,40 @@ export default function BookPage() {
     <div className="page">
       {/* Header */}
       <header>
-        <a href="/" className="logo">ABDULRAHMAN SULEIMAN<span className="divider">|</span>AI</a>
-        <a href="/" className="header-cta">Home</a>
+        <a href="/" className="book-logo">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="book-logo-icon">
+            <path d="M16 2L4 9v14l12 7 12-7V9L16 2z" stroke="#2E7BFF" strokeWidth="1.5" fill="none"/>
+            <path d="M16 6l-8 4.5v9L16 24l8-4.5v-9L16 6z" fill="rgba(46,123,255,0.1)" stroke="#2E7BFF" strokeWidth="0.5"/>
+            <circle cx="16" cy="14" r="3" fill="#2E7BFF"/>
+            <path d="M16 17v4" stroke="#2E7BFF" strokeWidth="1.5" strokeLinecap="round"/>
+          </svg>
+          <span>ABDULRAHMAN SULEIMAN<span className="divider">|</span>AI</span>
+        </a>
       </header>
 
       {/* Hero */}
       <div className="hero">
         <div className="glow-1"></div>
-        <h1 className="fade-in">Cut Over <span className="gr">$5K Per Month</span> and Save <span className="gr">20+ Hours</span> Per Week</h1>
-        <p className="fade-in-1">With Our Claude Code Systems</p>
-      </div>
 
-      {/* Offer Bar */}
-      <div className="offer-bar fade-in-2">
-        <span className="offer-tag">Live In 14 Days</span>
-        <span className="offer-text">Helping Founders &amp; Marketing Teams Stop Hiring &amp; Retaining — with AI Reps That Never Quit.</span>
+        {/* Badge */}
+        <div className="fade-in">
+          <span className="badge">
+            <span className="badge-dot"></span>
+            LIMITED SPOTS
+          </span>
+        </div>
+
+        {/* Eyebrow */}
+        <p className="book-eyebrow fade-in-1">For Founders &amp; Marketing Teams Ready to Scale with AI</p>
+
+        {/* Headline */}
+        <h1 className="fade-in-2">
+          Save <span className="gr">$5K to $10K Per Month</span> on New Hires and <span className="gr">20+ Hours Per Week</span> with AI Reps That Never Quit
+        </h1>
+
+        <p className="fade-in-2" style={{ color: "rgba(255,255,255,0.35)", fontSize: 15, lineHeight: 1.7, maxWidth: 520, margin: "0 auto" }}>
+          Live in 14 days. We build the system, you keep the savings.
+        </p>
       </div>
 
       {/* Calendly Embed */}
