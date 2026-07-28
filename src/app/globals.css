@@ -355,21 +355,37 @@ h1 .gradient {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Tablet */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .content { max-width: 540px; }
+  h1 { font-size: 38px; }
+  .checklist { max-width: 480px; }
+  .form-wrapper { max-width: 380px; }
+  .stats { gap: 40px; }
+}
+
 /* Mobile */
 @media (max-width: 639px) {
   html, body { max-width: 100%; overflow-x: hidden; }
-  header { padding: 14px 18px; }
-  .logo { font-size: 13px; letter-spacing: 1.5px; }
+  header { padding: 14px 16px; }
+  .logo { font-size: 11px; letter-spacing: 1.2px; }
   .social-links { gap: 6px; }
-  .social-link { width: 30px; height: 30px; }
-  main { padding: 20px 18px; }
-  .badge { font-size: 10px; letter-spacing: 0.1em; padding: 6px 12px; margin-bottom: 20px; }
-  h1 { font-size: 27px; letter-spacing: -1px; margin-bottom: 14px; }
-  .subtitle { font-size: 14px; line-height: 1.55; margin-bottom: 22px; }
-  .checklist { display: none; }
+  .social-link { width: 28px; height: 28px; }
+  .social-link svg { width: 12px; height: 12px; }
+  main { padding: 16px 16px; }
+  .badge { font-size: 9px; letter-spacing: 0.08em; padding: 6px 10px; margin-bottom: 16px; }
+  h1 { font-size: 26px; letter-spacing: -1px; margin-bottom: 12px; line-height: 1.1; }
+  .subtitle { font-size: 13px; line-height: 1.5; margin-bottom: 18px; }
+  .checklist { grid-template-columns: 1fr; gap: 8px; max-width: 100%; margin-bottom: 22px; }
+  .checklist-item { font-size: 12px; }
+  .checklist-item svg { width: 14px; height: 14px; }
   .form-wrapper { max-width: 100%; }
-  .stats { gap: 28px; margin-top: 18px; padding-top: 16px; }
-  .stat-number { font-size: 24px; }
+  .form-input { padding: 12px 16px; font-size: 13px; }
+  .submit-btn { padding: 14px 24px; font-size: 14px; }
+  .consent span { font-size: 11px; }
+  .stats { gap: 20px; margin-top: 16px; padding-top: 14px; flex-wrap: wrap; }
+  .stat-number { font-size: 22px; }
+  .stat-label { font-size: 9px; letter-spacing: 0.1em; }
 }
 
 /* ═══════════════════════════════════════════
@@ -606,4 +622,57 @@ footer a {
   .cta-wrap { padding: 0 16px 40px; }
   .card { padding: 28px 24px; }
   .card-title { font-size: 16px; }
+}
+
+/* ═══════════════════════════════════════════
+   BOOKING PAGE
+   ═══════════════════════════════════════════ */
+
+.offer-bar {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.offer-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: rgba(46, 123, 255, 0.12);
+  border: 1px solid rgba(46, 123, 255, 0.25);
+  color: #2E7BFF;
+  white-space: nowrap;
+}
+.offer-text {
+  font-size: 15px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.5;
+}
+
+.calendly-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+}
+.calendly-wrap iframe {
+  width: 100%;
+  min-height: 700px;
+}
+
+@media (max-width: 640px) {
+  .offer-bar { flex-direction: column; gap: 10px; padding: 0 16px 24px; }
+  .offer-text { font-size: 13px; }
+  .calendly-wrap { padding: 0 12px 36px; }
+  .calendly-wrap iframe { min-height: 600px; border-radius: 10px !important; }
 }
