@@ -6,12 +6,7 @@ export default function BookPage() {
       {/* Header */}
       <header>
         <a href="/" className="book-logo">
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="book-logo-icon">
-            <path d="M16 2L4 9v14l12 7 12-7V9L16 2z" stroke="#2E7BFF" strokeWidth="1.5" fill="none"/>
-            <path d="M16 6l-8 4.5v9L16 24l8-4.5v-9L16 6z" fill="rgba(46,123,255,0.1)" stroke="#2E7BFF" strokeWidth="0.5"/>
-            <circle cx="16" cy="14" r="3" fill="#2E7BFF"/>
-            <path d="M16 17v4" stroke="#2E7BFF" strokeWidth="1.5" strokeLinecap="round"/>
-          </svg>
+          <img src="/logo.png" alt="LaunchOps" className="book-logo-img" />
         </a>
       </header>
 
