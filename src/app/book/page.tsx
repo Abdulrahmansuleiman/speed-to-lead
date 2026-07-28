@@ -11,7 +11,7 @@ export default function BookPage() {
       </header>
 
       {/* Hero */}
-      <div className="hero book-hero">
+      <div className="book-hero">
         <div className="glow-1"></div>
 
         {/* Eyebrow */}
@@ -25,8 +25,9 @@ export default function BookPage() {
           Save <span className="gr">$5K to $10K Per Month</span> on New Hires<br />and <span className="gr">20+ Hours Per Week</span> with AI Reps
         </h1>
 
-        <p className="fade-in-2" style={{ color: "rgba(255,255,255,0.35)", fontSize: 15, lineHeight: 1.7, maxWidth: 520, margin: "0 auto" }}>
-          Live in 14 days. We build the system, you keep the savings.
+        {/* Subheadline */}
+        <p className="fade-in-2" style={{ fontSize: "clamp(0.875rem, 1.5vw, 1.125rem)", fontWeight: 400, color: "rgba(255,255,255,0.4)", lineHeight: 1.6, maxWidth: "40rem", margin: "24px auto 0" }}>
+          We implement our AI Operating System in your business in 14 days.
         </p>
       </div>
 
