@@ -12,7 +12,6 @@ export default function BookPage() {
             <circle cx="16" cy="14" r="3" fill="#2E7BFF"/>
             <path d="M16 17v4" stroke="#2E7BFF" strokeWidth="1.5" strokeLinecap="round"/>
           </svg>
-          <span>ABDULRAHMAN SULEIMAN<span className="divider">|</span>AI</span>
         </a>
       </header>
 
@@ -27,9 +26,6 @@ export default function BookPage() {
             LIMITED SPOTS
           </span>
         </div>
-
-        {/* Eyebrow */}
-        <p className="book-eyebrow fade-in-1">For Founders &amp; Marketing Teams Ready to Scale with AI</p>
 
         {/* Headline */}
         <h1 className="fade-in-2">
