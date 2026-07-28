@@ -121,15 +121,11 @@ main {
 
 /* Heading */
 h1 {
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-  margin-bottom: 20px;
-  font-size: clamp(1.5rem, 5vw, 30px);
-  max-width: 896px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow-wrap: break-word;
+  font-weight: 900;
+  line-height: 1.06;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+  font-size: clamp(28px, 4.6vw, 46px);
 }
 
 h1 .gradient {
@@ -644,6 +640,17 @@ footer a {
   width: auto;
   object-fit: contain;
 }
+.book-hero h1 {
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+  font-size: clamp(1.5rem, 5vw, 30px);
+  max-width: 896px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
+}
 .book-hero {
   padding-top: 60px;
   padding-bottom: 32px;
@@ -669,6 +676,17 @@ footer a {
   animation: pulse 2s infinite;
   box-shadow: 0 0 8px rgba(46, 123, 255, 0.5);
   flex-shrink: 0;
+}
+.book-hero h1 {
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+  font-size: clamp(1.5rem, 5vw, 30px);
+  max-width: 896px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: break-word;
 }
 
 .calendly-wrap {
