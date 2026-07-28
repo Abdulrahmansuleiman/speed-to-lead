@@ -11,17 +11,17 @@ export default function BookPage() {
       </header>
 
       {/* Hero */}
-      <div className="hero">
+      <div className="hero book-hero">
         <div className="glow-1"></div>
 
         {/* Eyebrow */}
-        <p className="book-eyebrow fade-in-1">
+        <p className="book-eyebrow fade-in">
           <span className="book-eyebrow-dot"></span>
           For Founders &amp; Marketing Teams Ready to Scale with AI
         </p>
 
         {/* Headline */}
-        <h1 className="fade-in-2">
+        <h1 className="fade-in-1">
           Save <span className="gr">$5K to $10K Per Month</span> on New Hires and <span className="gr">20+ Hours Per Week</span> with AI Reps That Never Quit
         </h1>
 
