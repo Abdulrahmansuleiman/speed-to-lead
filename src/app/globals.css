@@ -637,6 +637,14 @@ footer a {
   width: 32px;
   height: 32px;
 }
+.book-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 16px;
+}
 
 .calendly-wrap {
   max-width: 800px;

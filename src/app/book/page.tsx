@@ -19,13 +19,8 @@ export default function BookPage() {
       <div className="hero">
         <div className="glow-1"></div>
 
-        {/* Badge */}
-        <div className="fade-in">
-          <span className="badge">
-            <span className="badge-dot"></span>
-            LIMITED SPOTS
-          </span>
-        </div>
+        {/* Eyebrow */}
+        <p className="fade-in">For Founders &amp; Marketing Teams Ready to Scale with AI</p>
 
         {/* Headline */}
         <h1 className="fade-in-2">
