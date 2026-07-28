@@ -22,7 +22,7 @@ export default function BookPage() {
 
         {/* Headline */}
         <h1 className="fade-in-1">
-          Save <span className="gr">$5K to $10K Per Month</span> on New Hires and <span className="gr">20+ Hours Per Week</span> with AI Reps That Never Quit
+          Save <span className="gr">$5K to $10K Per Month</span> on New Hires and <span className="gr">20+ Hours Per Week</span> with AI Reps
         </h1>
 
         <p className="fade-in-2" style={{ color: "rgba(255,255,255,0.35)", fontSize: 15, lineHeight: 1.7, maxWidth: 520, margin: "0 auto" }}>
