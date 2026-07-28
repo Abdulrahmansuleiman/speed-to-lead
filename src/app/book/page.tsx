@@ -20,7 +20,10 @@ export default function BookPage() {
         <div className="glow-1"></div>
 
         {/* Eyebrow */}
-        <p className="fade-in">For Founders &amp; Marketing Teams Ready to Scale with AI</p>
+        <p className="book-eyebrow fade-in-1">
+          <span className="book-eyebrow-dot"></span>
+          For Founders &amp; Marketing Teams Ready to Scale with AI
+        </p>
 
         {/* Headline */}
         <h1 className="fade-in-2">
