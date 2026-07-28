@@ -55,7 +55,7 @@ export default function ResourcesPage() {
       {/* Header */}
       <header>
         <a href="/" className="logo">ABDULRAHMAN SULEIMAN<span className="divider">|</span>AI</a>
-        <a href="/" className="header-cta">Book A Call</a>
+        <a href="/book" className="header-cta">Book A Call</a>
       </header>
 
       {/* Hero */}
@@ -93,7 +93,7 @@ export default function ResourcesPage() {
             <h3>Ready to stop losing leads?</h3>
             <p>Book a call and let me set up your Speed-to-Lead system today.</p>
           </div>
-          <a href="/" className="cta-btn">Book A Call</a>
+          <a href="/book" className="cta-btn">Book A Call</a>
         </div>
       </div>
 
